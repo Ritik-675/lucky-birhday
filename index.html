@@ -10,11 +10,15 @@
 <body>
     <h1>Is your Birthday Lucky ? 🎂</h1>
     <div class="container">
-        <label for="dob">DOB</label>
+        <label for="dob" style="border-radius: 0.5rem ; background-color: var(--primary-dark) ; height: 5vh; text-align: center; padding: 0.3rem; font-size: 1.5rem; color: aliceblue; width: 90%;">DOB</label>
         <input type="date" name="dob" id="dob">
-        <label for="lucky-number">Lucky Number</label>
+        <label for="lucky-number" style="border-radius: 0.5rem ; background-color: var(--primary-dark) ; height: 5vh; text-align: center; padding: 0.3rem; font-size: 1.5rem; color: aliceblue;">Lucky Number</label>
         <input type="number" name="lucky-number" id="lucky-number">
-        <button class="check-button">Check Number</button>
+        <button class="check-button" >Check Number</button>
+        <textarea name="output-box" id="output-box" disabled cols="30" rows="10"></textarea>
+    </div>
+    <div class="foot">
+       <span class="portf"><a href="https://ritik-omega.netlify.app/"> Portfolio</a></span> 
     </div>
     <script src="bday.js"></script>
 </body>

@@ -12,14 +12,22 @@ function calculateSum(dateNum){
     return sum ;
 }
 
+const outputBox = document.querySelector("#output-box") ;
+
 function checkBirthdayLucky(){
     const dateNum =dateOfBirth.value ;
     const sum = calculateSum(dateNum) ;
-    if(sum%luckyNumber.value===0){
-        console.log("Yessssss !! your birthdayy is luckyy 😊") ;
+    if(sum && dateNum)
+    {
+        if(sum%luckyNumber.value===0){
+            outputBox.innerText = "Yessssss !! your birthdayy is luckyy 😊" ;
+        }
+        else{
+            outputBox.innerText = "Sorry !! Your birthdayy is not that Luckky 🥺" ;
+        }
     }
     else{
-        console.log("Sorry !! Your birthdayy is not that Luckky 🥺")
+        outputBox.innerText= "Please enter both the fields😡😠😡" ;
     }
 }
 checkButton.addEventListener("click",checkBirthdayLucky) ;
