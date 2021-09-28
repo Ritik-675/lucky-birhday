@@ -28,6 +28,8 @@ function checkBirthdayLucky(){
     }
     else{
         outputBox.innerText= "Please enter both the fields😡😠😡" ;
+
+        
     }
 }
 checkButton.addEventListener("click",checkBirthdayLucky) ;
